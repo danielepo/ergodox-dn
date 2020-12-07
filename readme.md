@@ -13,3 +13,7 @@
 This is what we ship with out of the factory. :) The image says it all:
 
 ![Default](https://i.imgur.com/Be53jH7.png)
+```
+docker build --file .\.docker\Dockerfile -t ergodox .
+docker run -v ${PWD}/build:/qmk_firmware/.build --rm ergodox
+```
